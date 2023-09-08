@@ -1,0 +1,51 @@
+{
+  "compileOnSave": false,
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "tmp", "temp"]
+  "compilerOptions": {
+    "lib": ["dom", "es2018"], // Extracted from Google GTS
+    "declaration": true, // Extracted from Google GTS
+    "sourceMap": true, // Extracted from Google GTS
+    "module": "commonjs", // Extracted from Google GTS
+    "strict": true, // Extracted from Google GTS
+    "pretty": true, // Extracted from Google GTS
+    "allowUnusedLabels": false, // Extracted from Google GTS
+    "forceConsistentCasingInFileNames": true, // Extracted from Google GTS
+    "noEmitOnError": true, // Extracted from Google GTS
+    "types": ["node", "tslib"],
+    "moduleResolution": "node",
+    "declarationMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true, // Support for CommonJS import
+    "allowSyntheticDefaultImports": true, // Support for CommonJS import
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "inlineSources": true,
+    "stripInternal": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "es2015",
+    "allowUnreachableCode": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "isolatedModules": false,
+    "strictNullChecks": false,
+    "noImplicitReturns": false,
+    "strictFunctionTypes": false,
+    "noFallthroughCasesInSwitch": false,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictBindCallApply": false,
+    "rootDir": "./src",
+    "outDir": "js",
+    "baseUrl": ".",
+    "paths": {
+      "javascript-sdk": ["./lib/javascript-sdk"]
+    },
+    "allowJs": true,
+    "alwaysStrict": true,
+    "suppressImplicitAnyIndexErrors": false,
+    "strictPropertyInitialization": false // want to set it to true but can't yet
+  }
+}
